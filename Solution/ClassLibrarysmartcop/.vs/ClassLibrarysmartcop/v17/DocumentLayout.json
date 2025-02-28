@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ribboncreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ribboncreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\classlibrarysmartcop\\openselectionformhandler .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\openselectionformhandler .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\nouveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\nouveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\nouveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\nouveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\classlibrarysmartcop\\pr\u00E9f\u00E9rences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\pr\u00E9f\u00E9rences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\classlibrarysmartcop\\niveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\niveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\classlibrarysmartcop\\ajouter_partie_privative.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajouter_partie_privative.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\classlibrarysmartcop\\tableau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\tableau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\classlibrarysmartcop\\proprietes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\proprietes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\classlibrarysmartcop\\pr\u00E9f\u00E9rences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\pr\u00E9f\u00E9rences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\classlibrarysmartcop\\privates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\privates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "nouveaux.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\nouveaux.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\nouveaux.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\nouveaux.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\nouveaux.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAewCIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T09:18:31.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "nouveaux.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\nouveaux.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\nouveaux.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\nouveaux.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\nouveaux.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T09:18:25.94Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OpenSelectionFormHandler .cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\OpenSelectionFormHandler .cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\OpenSelectionFormHandler .cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\OpenSelectionFormHandler .cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\OpenSelectionFormHandler .cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T12:29:38.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RibbonCreator.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\RibbonCreator.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\RibbonCreator.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\RibbonCreator.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\RibbonCreator.cs",
+              "ViewState": "AgIAAG4BAAAAAAAAAAAAAJsAAACpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T10:17:50.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pr\u00E9f\u00E9rences.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T15:34:21.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Pr\u00E9f\u00E9rences.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAhwDMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T15:34:23.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "proprietes.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\proprietes.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\proprietes.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\proprietes.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\proprietes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T15:33:25.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "tableau.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\tableau.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\tableau.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\tableau.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\tableau.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T15:33:24.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "niveaux.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\niveaux.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\niveaux.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\niveaux.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\niveaux.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T15:10:47.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ajouter_partie_privative.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Ajouter_partie_privative.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Ajouter_partie_privative.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Ajouter_partie_privative.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Ajouter_partie_privative.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T15:06:06.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "privates.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\privates.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\privates.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\privates.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\privates.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T15:33:28.658Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
