@@ -21,5 +21,14 @@ namespace ClassLibrarysmartcop
         {
             this.Close();
         }
+
+        private void ajustement_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'autocadDataSet5.Tantiemes' table. You can move, or remove it, as needed.
+            this.tantiemesTableAdapter.Fill(this.autocadDataSet5.Tantiemes);
+            // TODO: This line of code loads data into the 'autocadDataSet4.calcul' table. You can move, or remove it, as needed.
+            this.calculTableAdapter.Fill(this.autocadDataSet4.calcul);
+
+        }
     }
 }

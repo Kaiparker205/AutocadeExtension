@@ -50,6 +50,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.autocadDataSet3 = new ClassLibrarysmartcop.AutocadDataSet3();
+            this.ajoutercoteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ajoutercoteTableAdapter = new ClassLibrarysmartcop.AutocadDataSet3TableAdapters.ajoutercoteTableAdapter();
+            this.delacoteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alacoteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hauteurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ajouterniveauBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajoutercoteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -59,6 +65,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ajoutercoteBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // ajouterniveauBindingSource
@@ -146,7 +154,11 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.DataSource = this.ajoutercoteBindingSource;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.delacoteDataGridViewTextBoxColumn,
+            this.alacoteDataGridViewTextBoxColumn,
+            this.hauteurDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.ajoutercoteBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(10, 57);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(324, 150);
@@ -291,6 +303,38 @@
             this.label1.TabIndex = 49;
             this.label1.Text = "Type :";
             // 
+            // autocadDataSet3
+            // 
+            this.autocadDataSet3.DataSetName = "AutocadDataSet3";
+            this.autocadDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ajoutercoteBindingSource1
+            // 
+            this.ajoutercoteBindingSource1.DataMember = "ajoutercote";
+            this.ajoutercoteBindingSource1.DataSource = this.autocadDataSet3;
+            // 
+            // ajoutercoteTableAdapter
+            // 
+            this.ajoutercoteTableAdapter.ClearBeforeFill = true;
+            // 
+            // delacoteDataGridViewTextBoxColumn
+            // 
+            this.delacoteDataGridViewTextBoxColumn.DataPropertyName = "de_la_cote";
+            this.delacoteDataGridViewTextBoxColumn.HeaderText = "de_la_cote";
+            this.delacoteDataGridViewTextBoxColumn.Name = "delacoteDataGridViewTextBoxColumn";
+            // 
+            // alacoteDataGridViewTextBoxColumn
+            // 
+            this.alacoteDataGridViewTextBoxColumn.DataPropertyName = "a_la_cote";
+            this.alacoteDataGridViewTextBoxColumn.HeaderText = "a_la_cote";
+            this.alacoteDataGridViewTextBoxColumn.Name = "alacoteDataGridViewTextBoxColumn";
+            // 
+            // hauteurDataGridViewTextBoxColumn
+            // 
+            this.hauteurDataGridViewTextBoxColumn.DataPropertyName = "Hauteur";
+            this.hauteurDataGridViewTextBoxColumn.HeaderText = "Hauteur";
+            this.hauteurDataGridViewTextBoxColumn.Name = "hauteurDataGridViewTextBoxColumn";
+            // 
             // ajouterniveau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,6 +353,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ajouterniveau";
             this.Text = "ajouterniveau";
+            this.Load += new System.EventHandler(this.ajouterniveau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ajouterniveauBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajoutercoteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -318,6 +363,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ajoutercoteBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +392,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private AutocadDataSet3 autocadDataSet3;
+        private System.Windows.Forms.BindingSource ajoutercoteBindingSource1;
+        private AutocadDataSet3TableAdapters.ajoutercoteTableAdapter ajoutercoteTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn delacoteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn alacoteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hauteurDataGridViewTextBoxColumn;
     }
 }

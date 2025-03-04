@@ -21,5 +21,12 @@ namespace ClassLibrarysmartcop
         {
             this.Close();
         }
+
+        private void ajouterniveau_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'autocadDataSet3.ajoutercote' table. You can move, or remove it, as needed.
+            this.ajoutercoteTableAdapter.Fill(this.autocadDataSet3.ajoutercote);
+
+        }
     }
 }

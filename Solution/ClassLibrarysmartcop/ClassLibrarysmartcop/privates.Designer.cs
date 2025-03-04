@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(privates));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -36,10 +37,15 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.contenanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surfaceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contenancesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.autocadDataSet11 = new ClassLibrarysmartcop.AutocadDataSet11();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.tabGlossaire = new System.Windows.Forms.TabPage();
+            this.button17 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
@@ -64,6 +70,12 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.nDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.consistanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surfaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.avecsurplombDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.privativesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.autocadDataSet10 = new ClassLibrarysmartcop.AutocadDataSet10();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -76,6 +88,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.nDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.consistanceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surfaceDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.avecSurplombDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.communesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.autocadDataSet12 = new ClassLibrarysmartcop.AutocadDataSet12();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
@@ -89,6 +107,9 @@
             this.button14 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.privativesTableAdapter = new ClassLibrarysmartcop.AutocadDataSet10TableAdapters.privativesTableAdapter();
+            this.contenancesTableAdapter = new ClassLibrarysmartcop.AutocadDataSet11TableAdapters.ContenancesTableAdapter();
+            this.communesTableAdapter = new ClassLibrarysmartcop.AutocadDataSet12TableAdapters.CommunesTableAdapter();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabContenances.SuspendLayout();
@@ -96,6 +117,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contenancesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet11)).BeginInit();
             this.tabGlossaire.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPrivatives.SuspendLayout();
@@ -106,6 +129,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.privativesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet10)).BeginInit();
             this.tabCommunes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -113,6 +138,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.communesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -211,12 +238,39 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.contenanceDataGridViewTextBoxColumn,
+            this.surfaceDataGridViewTextBoxColumn1});
+            this.dataGridView1.DataSource = this.contenancesBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(19, 33);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(400, 125);
             this.dataGridView1.TabIndex = 50;
+            // 
+            // contenanceDataGridViewTextBoxColumn
+            // 
+            this.contenanceDataGridViewTextBoxColumn.DataPropertyName = "Contenance";
+            this.contenanceDataGridViewTextBoxColumn.HeaderText = "Contenance";
+            this.contenanceDataGridViewTextBoxColumn.Name = "contenanceDataGridViewTextBoxColumn";
+            // 
+            // surfaceDataGridViewTextBoxColumn1
+            // 
+            this.surfaceDataGridViewTextBoxColumn1.DataPropertyName = "Surface";
+            this.surfaceDataGridViewTextBoxColumn1.HeaderText = "Surface";
+            this.surfaceDataGridViewTextBoxColumn1.Name = "surfaceDataGridViewTextBoxColumn1";
+            // 
+            // contenancesBindingSource
+            // 
+            this.contenancesBindingSource.DataMember = "Contenances";
+            this.contenancesBindingSource.DataSource = this.autocadDataSet11;
+            // 
+            // autocadDataSet11
+            // 
+            this.autocadDataSet11.DataSetName = "AutocadDataSet11";
+            this.autocadDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button8
             // 
@@ -257,6 +311,7 @@
             // 
             // tabGlossaire
             // 
+            this.tabGlossaire.Controls.Add(this.button17);
             this.tabGlossaire.Controls.Add(this.button30);
             this.tabGlossaire.Controls.Add(this.button29);
             this.tabGlossaire.Controls.Add(this.button28);
@@ -277,6 +332,15 @@
             this.tabGlossaire.TabIndex = 1;
             this.tabGlossaire.Text = "Glossaire";
             this.tabGlossaire.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(34, 6);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(75, 23);
+            this.button17.TabIndex = 14;
+            this.button17.Text = "Chambre";
+            this.button17.UseVisualStyleBackColor = true;
             // 
             // button30
             // 
@@ -468,17 +532,14 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Cross;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(284, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(272, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 23);
+            this.pictureBox1.Size = new System.Drawing.Size(20, 15);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
@@ -547,12 +608,54 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nDataGridViewTextBoxColumn,
+            this.consistanceDataGridViewTextBoxColumn,
+            this.surfaceDataGridViewTextBoxColumn,
+            this.avecsurplombDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.privativesBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(9, 35);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(400, 125);
             this.dataGridView2.TabIndex = 39;
+            // 
+            // nDataGridViewTextBoxColumn
+            // 
+            this.nDataGridViewTextBoxColumn.DataPropertyName = "N";
+            this.nDataGridViewTextBoxColumn.HeaderText = "N";
+            this.nDataGridViewTextBoxColumn.Name = "nDataGridViewTextBoxColumn";
+            this.nDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // consistanceDataGridViewTextBoxColumn
+            // 
+            this.consistanceDataGridViewTextBoxColumn.DataPropertyName = "Consistance";
+            this.consistanceDataGridViewTextBoxColumn.HeaderText = "Consistance";
+            this.consistanceDataGridViewTextBoxColumn.Name = "consistanceDataGridViewTextBoxColumn";
+            // 
+            // surfaceDataGridViewTextBoxColumn
+            // 
+            this.surfaceDataGridViewTextBoxColumn.DataPropertyName = "Surface";
+            this.surfaceDataGridViewTextBoxColumn.HeaderText = "Surface";
+            this.surfaceDataGridViewTextBoxColumn.Name = "surfaceDataGridViewTextBoxColumn";
+            // 
+            // avecsurplombDataGridViewTextBoxColumn
+            // 
+            this.avecsurplombDataGridViewTextBoxColumn.DataPropertyName = "Avec_surplomb";
+            this.avecsurplombDataGridViewTextBoxColumn.HeaderText = "Avec_surplomb";
+            this.avecsurplombDataGridViewTextBoxColumn.Name = "avecsurplombDataGridViewTextBoxColumn";
+            // 
+            // privativesBindingSource
+            // 
+            this.privativesBindingSource.DataMember = "privatives";
+            this.privativesBindingSource.DataSource = this.autocadDataSet10;
+            // 
+            // autocadDataSet10
+            // 
+            this.autocadDataSet10.DataSetName = "AutocadDataSet10";
+            this.autocadDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button4
             // 
@@ -726,12 +829,53 @@
             // dataGridView3
             // 
             this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AutoGenerateColumns = false;
             this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(6, 32);
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nDataGridViewTextBoxColumn1,
+            this.consistanceDataGridViewTextBoxColumn1,
+            this.surfaceDataGridViewTextBoxColumn2,
+            this.avecSurplombDataGridViewTextBoxColumn1});
+            this.dataGridView3.DataSource = this.communesBindingSource;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 32);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(406, 125);
+            this.dataGridView3.Size = new System.Drawing.Size(413, 125);
             this.dataGridView3.TabIndex = 50;
+            // 
+            // nDataGridViewTextBoxColumn1
+            // 
+            this.nDataGridViewTextBoxColumn1.DataPropertyName = "N";
+            this.nDataGridViewTextBoxColumn1.HeaderText = "N";
+            this.nDataGridViewTextBoxColumn1.Name = "nDataGridViewTextBoxColumn1";
+            // 
+            // consistanceDataGridViewTextBoxColumn1
+            // 
+            this.consistanceDataGridViewTextBoxColumn1.DataPropertyName = "Consistance";
+            this.consistanceDataGridViewTextBoxColumn1.HeaderText = "Consistance";
+            this.consistanceDataGridViewTextBoxColumn1.Name = "consistanceDataGridViewTextBoxColumn1";
+            // 
+            // surfaceDataGridViewTextBoxColumn2
+            // 
+            this.surfaceDataGridViewTextBoxColumn2.DataPropertyName = "Surface";
+            this.surfaceDataGridViewTextBoxColumn2.HeaderText = "Surface";
+            this.surfaceDataGridViewTextBoxColumn2.Name = "surfaceDataGridViewTextBoxColumn2";
+            // 
+            // avecSurplombDataGridViewTextBoxColumn1
+            // 
+            this.avecSurplombDataGridViewTextBoxColumn1.DataPropertyName = "AvecSurplomb";
+            this.avecSurplombDataGridViewTextBoxColumn1.HeaderText = "AvecSurplomb";
+            this.avecSurplombDataGridViewTextBoxColumn1.Name = "avecSurplombDataGridViewTextBoxColumn1";
+            // 
+            // communesBindingSource
+            // 
+            this.communesBindingSource.DataMember = "Communes";
+            this.communesBindingSource.DataSource = this.autocadDataSet12;
+            // 
+            // autocadDataSet12
+            // 
+            this.autocadDataSet12.DataSetName = "AutocadDataSet12";
+            this.autocadDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button11
             // 
@@ -908,6 +1052,18 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Niveau :";
             // 
+            // privativesTableAdapter
+            // 
+            this.privativesTableAdapter.ClearBeforeFill = true;
+            // 
+            // contenancesTableAdapter
+            // 
+            this.contenancesTableAdapter.ClearBeforeFill = true;
+            // 
+            // communesTableAdapter
+            // 
+            this.communesTableAdapter.ClearBeforeFill = true;
+            // 
             // privates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -919,6 +1075,7 @@
             this.Controls.Add(this.label1);
             this.Name = "privates";
             this.Text = "privates";
+            this.Load += new System.EventHandler(this.privates_Load);
             this.groupBox2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabContenances.ResumeLayout(false);
@@ -926,6 +1083,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contenancesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet11)).EndInit();
             this.tabGlossaire.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.tabPrivatives.ResumeLayout(false);
@@ -936,6 +1095,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.privativesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet10)).EndInit();
             this.tabCommunes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
@@ -943,6 +1104,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.communesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
@@ -961,7 +1124,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button8;
         protected System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
@@ -984,12 +1146,10 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button4;
         protected System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
@@ -1001,7 +1161,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Button button11;
         protected System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
@@ -1015,5 +1174,29 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
+        private AutocadDataSet10 autocadDataSet10;
+        private System.Windows.Forms.BindingSource privativesBindingSource;
+        private AutocadDataSet10TableAdapters.privativesTableAdapter privativesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn consistanceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surfaceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn avecsurplombDataGridViewTextBoxColumn;
+        public System.Windows.Forms.DataGridView dataGridView2;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        private AutocadDataSet11 autocadDataSet11;
+        private System.Windows.Forms.BindingSource contenancesBindingSource;
+        private AutocadDataSet11TableAdapters.ContenancesTableAdapter contenancesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contenanceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surfaceDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button button17;
+        private AutocadDataSet12 autocadDataSet12;
+        private System.Windows.Forms.BindingSource communesBindingSource;
+        private AutocadDataSet12TableAdapters.CommunesTableAdapter communesTableAdapter;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn consistanceDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surfaceDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn avecSurplombDataGridViewTextBoxColumn1;
+        public System.Windows.Forms.DataGridView dataGridView3;
     }
 }

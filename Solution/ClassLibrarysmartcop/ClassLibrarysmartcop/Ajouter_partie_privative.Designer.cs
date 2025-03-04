@@ -39,12 +39,15 @@
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.observationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.observationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.autocadDataSet2 = new ClassLibrarysmartcop.AutocadDataSet2();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.observationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.annuler = new System.Windows.Forms.Button();
@@ -56,6 +59,14 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.polylineDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surfaceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.suplombDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empiétementDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empieterSurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.psurplombBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.autocadDataSet1 = new ClassLibrarysmartcop.AutocadDataSet1();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -70,11 +81,15 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.polylinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.polylineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surfaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.polylinesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.autocadDataSet = new ClassLibrarysmartcop.AutocadDataSet();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.polylinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -87,6 +102,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.polylinesTableAdapter = new ClassLibrarysmartcop.AutocadDataSetTableAdapters.PolylinesTableAdapter();
+            this.p_surplombTableAdapter = new ClassLibrarysmartcop.AutocadDataSet1TableAdapters.p_surplombTableAdapter();
+            this.observationTableAdapter = new ClassLibrarysmartcop.AutocadDataSet2TableAdapters.ObservationTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.psurplombBindingSource)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -94,6 +112,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.observationBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.observationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -103,6 +123,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psurplombBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -110,6 +132,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.polylinesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.polylinesBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -231,15 +255,29 @@
             this.dataGridView3.AutoGenerateColumns = false;
             this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.DataSource = this.observationBindingSource;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.observationDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.observationBindingSource1;
             this.dataGridView3.Location = new System.Drawing.Point(24, 46);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(305, 180);
             this.dataGridView3.TabIndex = 61;
             // 
-            // observationBindingSource
+            // observationDataGridViewTextBoxColumn
             // 
-            this.observationBindingSource.DataMember = "Observation";
+            this.observationDataGridViewTextBoxColumn.DataPropertyName = "Observation";
+            this.observationDataGridViewTextBoxColumn.HeaderText = "Observation";
+            this.observationDataGridViewTextBoxColumn.Name = "observationDataGridViewTextBoxColumn";
+            // 
+            // observationBindingSource1
+            // 
+            this.observationBindingSource1.DataMember = "Observation";
+            this.observationBindingSource1.DataSource = this.autocadDataSet2;
+            // 
+            // autocadDataSet2
+            // 
+            this.autocadDataSet2.DataSetName = "AutocadDataSet2";
+            this.autocadDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button14
             // 
@@ -296,6 +334,10 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 17);
             this.label7.TabIndex = 14;
+            // 
+            // observationBindingSource
+            // 
+            this.observationBindingSource.DataMember = "Observation";
             // 
             // pictureBox4
             // 
@@ -460,11 +502,64 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.DataSource = this.psurplombBindingSource;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.polylineDataGridViewTextBoxColumn1,
+            this.surfaceDataGridViewTextBoxColumn1,
+            this.suplombDataGridViewTextBoxColumn,
+            this.empiétementDataGridViewTextBoxColumn,
+            this.empieterSurDataGridViewTextBoxColumn,
+            this.nDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.psurplombBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(18, 52);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(636, 150);
             this.dataGridView1.TabIndex = 61;
+            // 
+            // polylineDataGridViewTextBoxColumn1
+            // 
+            this.polylineDataGridViewTextBoxColumn1.DataPropertyName = "Polyline";
+            this.polylineDataGridViewTextBoxColumn1.HeaderText = "Polyline";
+            this.polylineDataGridViewTextBoxColumn1.Name = "polylineDataGridViewTextBoxColumn1";
+            // 
+            // surfaceDataGridViewTextBoxColumn1
+            // 
+            this.surfaceDataGridViewTextBoxColumn1.DataPropertyName = "Surface";
+            this.surfaceDataGridViewTextBoxColumn1.HeaderText = "Surface";
+            this.surfaceDataGridViewTextBoxColumn1.Name = "surfaceDataGridViewTextBoxColumn1";
+            // 
+            // suplombDataGridViewTextBoxColumn
+            // 
+            this.suplombDataGridViewTextBoxColumn.DataPropertyName = "Suplomb";
+            this.suplombDataGridViewTextBoxColumn.HeaderText = "Suplomb";
+            this.suplombDataGridViewTextBoxColumn.Name = "suplombDataGridViewTextBoxColumn";
+            // 
+            // empiétementDataGridViewTextBoxColumn
+            // 
+            this.empiétementDataGridViewTextBoxColumn.DataPropertyName = "Empiétement";
+            this.empiétementDataGridViewTextBoxColumn.HeaderText = "Empiétement";
+            this.empiétementDataGridViewTextBoxColumn.Name = "empiétementDataGridViewTextBoxColumn";
+            // 
+            // empieterSurDataGridViewTextBoxColumn
+            // 
+            this.empieterSurDataGridViewTextBoxColumn.DataPropertyName = "EmpieterSur";
+            this.empieterSurDataGridViewTextBoxColumn.HeaderText = "EmpieterSur";
+            this.empieterSurDataGridViewTextBoxColumn.Name = "empieterSurDataGridViewTextBoxColumn";
+            // 
+            // nDataGridViewTextBoxColumn
+            // 
+            this.nDataGridViewTextBoxColumn.DataPropertyName = "N";
+            this.nDataGridViewTextBoxColumn.HeaderText = "N";
+            this.nDataGridViewTextBoxColumn.Name = "nDataGridViewTextBoxColumn";
+            // 
+            // psurplombBindingSource1
+            // 
+            this.psurplombBindingSource1.DataMember = "p_surplomb";
+            this.psurplombBindingSource1.DataSource = this.autocadDataSet1;
+            // 
+            // autocadDataSet1
+            // 
+            this.autocadDataSet1.DataSetName = "AutocadDataSet1";
+            this.autocadDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button9
             // 
@@ -659,15 +754,36 @@
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.DataSource = this.polylinesBindingSource;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.polylineDataGridViewTextBoxColumn,
+            this.surfaceDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.polylinesBindingSource1;
             this.dataGridView2.Location = new System.Drawing.Point(19, 52);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(440, 208);
             this.dataGridView2.TabIndex = 50;
             // 
-            // polylinesBindingSource
+            // polylineDataGridViewTextBoxColumn
             // 
-            this.polylinesBindingSource.DataMember = "Polylines";
+            this.polylineDataGridViewTextBoxColumn.DataPropertyName = "Polyline";
+            this.polylineDataGridViewTextBoxColumn.HeaderText = "Polyline";
+            this.polylineDataGridViewTextBoxColumn.Name = "polylineDataGridViewTextBoxColumn";
+            // 
+            // surfaceDataGridViewTextBoxColumn
+            // 
+            this.surfaceDataGridViewTextBoxColumn.DataPropertyName = "Surface";
+            this.surfaceDataGridViewTextBoxColumn.HeaderText = "Surface";
+            this.surfaceDataGridViewTextBoxColumn.Name = "surfaceDataGridViewTextBoxColumn";
+            // 
+            // polylinesBindingSource1
+            // 
+            this.polylinesBindingSource1.DataMember = "Polylines";
+            this.polylinesBindingSource1.DataSource = this.autocadDataSet;
+            // 
+            // autocadDataSet
+            // 
+            this.autocadDataSet.DataSetName = "AutocadDataSet";
+            this.autocadDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button4
             // 
@@ -705,6 +821,7 @@
             this.button6.Text = "Ajouter";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label5
             // 
@@ -716,6 +833,10 @@
             this.label5.Size = new System.Drawing.Size(137, 17);
             this.label5.TabIndex = 14;
             this.label5.Text = "Surface calculée :0m²";
+            // 
+            // polylinesBindingSource
+            // 
+            this.polylinesBindingSource.DataMember = "Polylines";
             // 
             // checkBox3
             // 
@@ -827,6 +948,18 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "Numéro :";
             // 
+            // polylinesTableAdapter
+            // 
+            this.polylinesTableAdapter.ClearBeforeFill = true;
+            // 
+            // p_surplombTableAdapter
+            // 
+            this.p_surplombTableAdapter.ClearBeforeFill = true;
+            // 
+            // observationTableAdapter
+            // 
+            this.observationTableAdapter.ClearBeforeFill = true;
+            // 
             // Ajouter_partie_privative
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -851,6 +984,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Ajouter_partie_privative";
             this.Text = "Ajouter_partie_privative";
+            this.Load += new System.EventHandler(this.Ajouter_partie_privative_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.psurplombBindingSource)).EndInit();
             this.groupBox4.ResumeLayout(false);
@@ -859,6 +993,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.observationBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.observationBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -869,6 +1005,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.psurplombBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -877,6 +1015,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.polylinesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.polylinesBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -895,7 +1035,6 @@
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.BindingSource observationBindingSource;
         private System.Windows.Forms.Button button14;
         protected System.Windows.Forms.Button button15;
@@ -912,7 +1051,6 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button9;
         protected System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
@@ -926,7 +1064,6 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource polylinesBindingSource;
         private System.Windows.Forms.Button button4;
         protected System.Windows.Forms.Button button5;
@@ -944,5 +1081,26 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private AutocadDataSet autocadDataSet;
+        private System.Windows.Forms.BindingSource polylinesBindingSource1;
+        private AutocadDataSetTableAdapters.PolylinesTableAdapter polylinesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn polylineDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surfaceDataGridViewTextBoxColumn;
+        private AutocadDataSet1 autocadDataSet1;
+        private System.Windows.Forms.BindingSource psurplombBindingSource1;
+        private AutocadDataSet1TableAdapters.p_surplombTableAdapter p_surplombTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn polylineDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surfaceDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn suplombDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empiétementDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empieterSurDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nDataGridViewTextBoxColumn;
+        private AutocadDataSet2 autocadDataSet2;
+        private System.Windows.Forms.BindingSource observationBindingSource1;
+        private AutocadDataSet2TableAdapters.ObservationTableAdapter observationTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn observationDataGridViewTextBoxColumn;
+        public System.Windows.Forms.DataGridView dataGridView2;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView dataGridView3;
     }
 }

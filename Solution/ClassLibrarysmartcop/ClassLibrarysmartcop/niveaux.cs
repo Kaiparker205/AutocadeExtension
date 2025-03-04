@@ -27,5 +27,12 @@ namespace ClassLibrarysmartcop
             ajouterniveau ajouterniveau = new ajouterniveau();
             ajouterniveau.Show();
         }
+
+        private void niveaux_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'autocadDataSet8.ajouterniveau' table. You can move, or remove it, as needed.
+            this.ajouterniveauTableAdapter.Fill(this.autocadDataSet8.ajouterniveau);
+
+        }
     }
 }

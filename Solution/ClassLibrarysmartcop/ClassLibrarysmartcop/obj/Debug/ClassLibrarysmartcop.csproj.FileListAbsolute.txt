@@ -52,3 +52,5 @@ C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\obj\Debug\Cla
 C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\obj\Debug\ClassLibrarysmartcop.dll
 C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\obj\Debug\ClassLibrarysmartcop.pdb
 C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\bin\Debug\RibbonControlsLibrary.dll
+C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\bin\Debug\ClassLibrarysmartcop.dll.config
+C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\obj\Debug\ClassLibrarysmartcop.ajouterproprietaires.resources

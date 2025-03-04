@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(niveaux));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -44,6 +45,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.autocadDataSet8 = new ClassLibrarysmartcop.AutocadDataSet8();
+            this.ajouterniveauBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ajouterniveauTableAdapter = new ClassLibrarysmartcop.AutocadDataSet8TableAdapters.ajouterniveauTableAdapter();
+            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hauteurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surfaceavecsurplombDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -52,12 +60,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ajouterniveauBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.typeDataGridViewTextBoxColumn,
+            this.numeroDataGridViewTextBoxColumn,
+            this.hauteurDataGridViewTextBoxColumn,
+            this.surfaceavecsurplombDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.ajouterniveauBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(145, 17);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(638, 384);
@@ -250,6 +267,44 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // autocadDataSet8
+            // 
+            this.autocadDataSet8.DataSetName = "AutocadDataSet8";
+            this.autocadDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ajouterniveauBindingSource
+            // 
+            this.ajouterniveauBindingSource.DataMember = "ajouterniveau";
+            this.ajouterniveauBindingSource.DataSource = this.autocadDataSet8;
+            // 
+            // ajouterniveauTableAdapter
+            // 
+            this.ajouterniveauTableAdapter.ClearBeforeFill = true;
+            // 
+            // typeDataGridViewTextBoxColumn
+            // 
+            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
+            this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
+            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            // 
+            // numeroDataGridViewTextBoxColumn
+            // 
+            this.numeroDataGridViewTextBoxColumn.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
+            // 
+            // hauteurDataGridViewTextBoxColumn
+            // 
+            this.hauteurDataGridViewTextBoxColumn.DataPropertyName = "Hauteur";
+            this.hauteurDataGridViewTextBoxColumn.HeaderText = "Hauteur";
+            this.hauteurDataGridViewTextBoxColumn.Name = "hauteurDataGridViewTextBoxColumn";
+            // 
+            // surfaceavecsurplombDataGridViewTextBoxColumn
+            // 
+            this.surfaceavecsurplombDataGridViewTextBoxColumn.DataPropertyName = "Surface_avec_surplomb";
+            this.surfaceavecsurplombDataGridViewTextBoxColumn.HeaderText = "Surface_avec_surplomb";
+            this.surfaceavecsurplombDataGridViewTextBoxColumn.Name = "surfaceavecsurplombDataGridViewTextBoxColumn";
+            // 
             // niveaux
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,6 +327,7 @@
             this.Controls.Add(this.button1);
             this.Name = "niveaux";
             this.Text = "niveaux";
+            this.Load += new System.EventHandler(this.niveaux_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -280,13 +336,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ajouterniveauBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button annuler;
@@ -301,5 +357,13 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private AutocadDataSet8 autocadDataSet8;
+        private System.Windows.Forms.BindingSource ajouterniveauBindingSource;
+        private AutocadDataSet8TableAdapters.ajouterniveauTableAdapter ajouterniveauTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hauteurDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surfaceavecsurplombDataGridViewTextBoxColumn;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

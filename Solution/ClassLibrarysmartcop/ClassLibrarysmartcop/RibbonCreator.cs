@@ -12,9 +12,7 @@ using Autodesk.AutoCAD.EditorInput;
 using Autodesk.AutoCAD.GraphicsInterface;
 using Autodesk.AutoCAD.Runtime;
 using Autodesk.Windows;
-using ClassLibrarysmartcop;
 using static System.Net.Mime.MediaTypeNames;
-
 
 [assembly: CommandClass(typeof(ClassLibrarysmartcop.RibbonCreator))]
 
@@ -29,6 +27,9 @@ namespace ClassLibrarysmartcop
         [CommandMethod("SmartCop")]
         public static void LoadSmartCopRibbon()
         {
+            try
+            {
+            
             Editor ed = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor;
             ed.WriteMessage("\n[DEBUG] Running SmartCop Ribbon setup...");
 
@@ -74,351 +75,211 @@ namespace ClassLibrarysmartcop
                 Source = projetPanelSource
             };
 
-            //Create "Nouveau and Pr" RibbonButton.
+            // Create "Nouveau and Propriétés" RibbonButton.
             CreateInitialPanels(projetPanelSource, projetPanel);
 
-            //this**********  SmartCopTab.Panels.Add(projetPanel);
+            // Add the panel to the tab
+           //this***** SmartCopTab.Panels.Add(projetPanel);
             #endregion
 
-
-            #region Niveau/Parties
-            // Create Projet Panel 
-            RibbonPanelSource nvPanelSource = new RibbonPanelSource
+            CreateHiddenPanels();
+            ComponentManager.Ribbon.UpdateLayout();
+        }
+            catch (System.Exception ex)
             {
-                Title = "Niveaux/Parties"
-            };
-            RibbonPanel nvPanel = new RibbonPanel
+                Editor ed = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor;
+                ed.WriteMessage("\n[ERROR] Exception in LoadSmartCopRibbon: " + ex.Message);
+            }
+        }
+
+        private static void CreateHiddenPanels()
+        {
+            // Create the "Niveau/Parties" panel using the Niveau/Parties class
+            RibbonPanelSource niveauPanelSource = new RibbonPanelSource
             {
-                Source = nvPanelSource
+                Title = "Niveau/Parties"
             };
 
-            // Create "Niveau" Button
-            RibbonButton niveauxButton = new RibbonButton
+            RibbonPanel niveausPanel = new RibbonPanel
             {
-                Text = "Niveaux",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
+                Source = niveauPanelSource
             };
-            niveauxButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\niveaux.png", 16, 16);
-            niveauxButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\niveaux.png", 32, 32);
+            niveau.CreateInitialPanels(niveauPanelSource, niveausPanel);
+            hiddenPanels.Add(niveausPanel);
 
 
-
-            RibbonButton pcButton = new RibbonButton
-            {
-                Text = "Privatives/Communes",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-
-            };
-            pcButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\Privqtives Communes.png", 16, 16);
-            pcButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\Privqtives Communes.png", 64, 64);
-
-            nvPanelSource.Items.Add(niveauxButton);
-            nvPanelSource.Items.Add(pcButton);
-
-            SmartCopTab.Panels.Add(nvPanel);
-            #endregion
-
-            #region Dessin
-            // Create Projet Panel 
+            // Create the "Dessin" panel using the Dessin class
             RibbonPanelSource dessinPanelSource = new RibbonPanelSource
             {
                 Title = "Dessin"
             };
+
             RibbonPanel dessinPanel = new RibbonPanel
             {
                 Source = dessinPanelSource
             };
 
-            RibbonButton orientationButton = new RibbonButton
+            // Use the Dessin class to create the panel contents
+            Dessin.CreateInitialPanels(dessinPanelSource, dessinPanel);
+            hiddenPanels.Add(dessinPanel);
+
+
+            // Create the "livrables" panel using the livrables class
+            RibbonPanelSource livrablesPanelSource = new RibbonPanelSource
             {
-                Text = "Orientation du dessin",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
+                Title = "livrables"
             };
-            orientationButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\vérification.png", 16, 16);
-            orientationButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\vérification.png", 16, 16);
 
-
-            //  Bouton "Mise à jour du dessin"
-            RibbonButton miseAJourButton = new RibbonButton
+            RibbonPanel livrablesPanel = new RibbonPanel
             {
-                Text = "Mise à jour du dessin",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
+                Source = livrablesPanelSource
             };
-            miseAJourButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\actualiser.png", 16, 16);
-            miseAJourButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\actualiser.png", 13, 13);
 
-
-            // Label "Échelle"
-            RibbonLabel echelleLabel = new RibbonLabel
-            {
-                Text = "Échelle",
-                ShowText = true,
-                Size = RibbonItemSize.Large,            
-            };
+            // Use the livrables class to create the panel contents
            
+            Livrables.CreateLivrablesPanel(livrablesPanelSource, livrablesPanel);
+            hiddenPanels.Add(livrablesPanel);
 
 
-            // ComboBox "Échelle"
-            RibbonSplitButton echelleSplitButton = new RibbonSplitButton
-            {
-                Text = "Échelle",
-                ShowText = true
-            }
-            ;
-            echelleSplitButton.Items.Add(new Autodesk.Windows.RibbonButton { Text = "1/50" });
-            echelleSplitButton.Items.Add(new Autodesk.Windows.RibbonButton { Text = "1/100" });
-            echelleSplitButton.Items.Add(new Autodesk.Windows.RibbonButton { Text = "1/200" });
-
-        
-
-
-
-            //// Create "Nouveau" Button
-            RibbonButton HabillageButton = new RibbonButton
-            {
-                Text = "Habillage",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-
-            };
-            HabillageButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\Habillage.png", 16, 16);
-            HabillageButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\Habillage.png", 32, 32);
-
-
-            //Add Button to Projet Panel
-
-            RibbonButton tableauButton = new RibbonButton
-            {
-                Text = "Tableau des contenances",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-            };
-            tableauButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\tableau.png", 16, 16);
-            tableauButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\tableau.png", 32, 32);
-
-
-            RibbonButton calquesButton = new RibbonButton
-            {
-                Text = "Calques",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-            };
-            calquesButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\Calques.png", 16, 16);
-            calquesButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\Calques.png", 32, 32);
-
-            dessinPanelSource.Items.Add(orientationButton);
-            dessinPanelSource.Items.Add(miseAJourButton);
-            dessinPanelSource.Items.Add(echelleLabel);
-            dessinPanelSource.Items.Add(echelleSplitButton);
-
-
-            dessinPanelSource.Items.Add(HabillageButton);
-            dessinPanelSource.Items.Add(tableauButton);
-            dessinPanelSource.Items.Add(calquesButton);
-            
-
-            SmartCopTab.Panels.Add(dessinPanel);
-            #endregion
-
-            #region Livrable
-            //// Create Projet Panel 
-            RibbonPanelSource LivrablePanelSource = new RibbonPanelSource
-            {
-                Title = "Livrable"
-            };
-            RibbonPanel LivrablePanel = new RibbonPanel
-            {
-                Source = LivrablePanelSource
-            };
-
-            RibbonButton AjustementButton = new RibbonButton
-            {
-                Text = "Ajustement",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-
-            };
-            AjustementButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\ajustement.png", 16, 16);
-            AjustementButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\ajustement.png", 32, 32);
-
-            RibbonButton genererButton = new RibbonButton
-            {
-                Text = "Générer",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-
-            };
-            genererButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\generer.png", 16, 16);
-            genererButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\generer.png", 32, 32);
-            
-
-
-            // Bouton "P.V"
-            RibbonButton pvButton = new RibbonButton
-            {
-                Text = "P.V",
-                ShowText = true,
-                Size = RibbonItemSize.Standard,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-            };
-            pvButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png", 16, 16);
-            pvButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png", 32, 32);
-
-
-
-
-            // Bouton "Règlement"
-            RibbonButton reglementButton = new RibbonButton
-            {
-                Text = "Règlement",
-                ShowText = true,
-                Size = RibbonItemSize.Standard,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-            };
-            reglementButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png", 16, 16);
-            reglementButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png", 32, 32);
-
-
-
-
-            // Bouton "Tableau A"
-            RibbonButton tableauAButton = new RibbonButton
-            {
-                Text = "Tableau A",
-                ShowText = true,
-                Size = RibbonItemSize.Standard,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-            };
-            tableauAButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png", 16, 16);
-            tableauAButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png", 32, 32);
-
-
-
-
-            // Bouton "Calcul graphique"
-            RibbonButton calculGraphiqueButton = new RibbonButton
-            {
-                Text = "Calcul graphique",
-                ShowText = true,
-                Size = RibbonItemSize.Standard,
-              Orientation = System.Windows.Controls.Orientation.Vertical,
-            };
-            calculGraphiqueButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png", 16, 16);
-            calculGraphiqueButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png", 32, 32);
-
-
-
-
-            // Bouton "Tableau B"
-            RibbonButton tableauBButton = new RibbonButton
-            {
-                Text = "Tableau B",
-                ShowText = true,
-                Size = RibbonItemSize.Standard,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-            };
-            pvButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png", 16, 16);
-            pvButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png", 32, 32);
-
-
-
-
-            // Bouton "Messages: 18"
-            RibbonButton messagesButton = new RibbonButton
-            {
-                Text = "Messages: 18",
-                ShowText = true,
-                Size = RibbonItemSize.Standard,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
-            };
-            messagesButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\!.png", 16, 16);
-            messagesButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\!.png", 32, 32);
-
-
-
-            LivrablePanelSource.Items.Add(AjustementButton);
-            LivrablePanelSource.Items.Add(genererButton);
-            LivrablePanelSource.Items.Add(pvButton);
-            LivrablePanelSource.Items.Add(tableauAButton);
-            LivrablePanelSource.Items.Add(tableauBButton);
-            LivrablePanelSource.Items.Add(reglementButton);
-            LivrablePanelSource.Items.Add(calculGraphiqueButton);
-            LivrablePanelSource.Items.Add(messagesButton);
-            SmartCopTab.Panels.Add(LivrablePanel);
-            #endregion
-
-
-            #region SmartCop
-            // Create Projet Panel 
+            // Create the "livrables" panel using the livrables class
             RibbonPanelSource SmartCopPanelSource = new RibbonPanelSource
             {
                 Title = "SmartCop"
             };
+
             RibbonPanel SmartCopPanel = new RibbonPanel
             {
                 Source = SmartCopPanelSource
             };
 
-            ////// Create "Nouveau" Button
-            RibbonButton PréférencesButton = new RibbonButton
+            // Use the livrables class to create the panel contents
+
+            SmartCop.CreateInitialPanels(SmartCopPanelSource, SmartCopPanel);
+            hiddenPanels.Add(SmartCopPanel);
+
+
+
+
+            // Dictionary mapping sections to buttons and their corresponding icon paths
+            Dictionary<string, Dictionary<string, string>> sections = new Dictionary<string, Dictionary<string, string>>
             {
-                Text = "Préférences",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
+                //{ "Niveau/Parties", new Dictionary<string, string>
+                //    {
+                //        { "Fichiers DWG", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\niveaux.png" },
+                //        { "Niveaux", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\niveaux.png" },
+                //        { "Privatives/Communes", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\Privqtives Communes.png" }
+                //    }
+                //},
+                //{ "Dessin", new Dictionary<string, string>
+                //    {
+                //        { "Orientation du dessin", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\vérification.png" },
+                //        { "Mise à jour du dessin", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\actualiser.png" },
+                //    { "Échelle", "" },
 
-            };
+                //        { "Habillage", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\Habillage.png" },
+                //        { "Tableau des contenances", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\tableau.png" },
+                //        { "Calques", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\Calques.png" }
+                //    }
+                //},
 
-            RibbonButton proposButton = new RibbonButton
+    // { "Livrables", new Dictionary<string, string>
+    //{
+    //        { "Ajustement", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\ajustement.png" },
+    //        { "Générer", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\generer.png" },
+    //        { "P.V", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png" },
+    //        { "Tableau A", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png" },
+    //        { "Tableau B", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png" },
+
+    //        { "Règlement", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png" },
+    //        { "Calcul graphique", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\word.png" },
+    //        { "Messages: 18", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\!.png" },
+    //    }
+    //},
+
+
+    //{ "SmartCop", new Dictionary<string, string>
+    //    {
+    //        { "Préférences", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\a-propos-de.png" },
+    //        { "À Propos", @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\a-propos-de.png" }
+
+    //    }
+    //}
+};
+
+            foreach (var section in sections)
             {
-                Text = "A propos",
-                ShowText = true,
-                Size = RibbonItemSize.Large,
-                Orientation = System.Windows.Controls.Orientation.Vertical,
+                RibbonPanelSource panelSource = new RibbonPanelSource { Title = section.Key };
+                RibbonPanel panel = new RibbonPanel { Source = panelSource };
+                RibbonRowPanel rowPanel = new RibbonRowPanel();
 
-            };
-            proposButton.Image = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\a-propos-de.png", 16, 16);
-            proposButton.LargeImage = ImageManager.LoadAndResizeImage(@"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\a-propos-de.png", 32, 32);
+                foreach (var buttonData in section.Value)
+                {
+                    string buttonText = buttonData.Key;
+                    string imagePath = buttonData.Value;
 
-            SmartCopPanelSource.Items.Add(PréférencesButton);
-            SmartCopPanelSource.Items.Add(proposButton);
-            SmartCopTab.Panels.Add(SmartCopPanel);
-            #endregion
+                    if (buttonText == "Échelle")
+                    {
+                        // Ajouter un label "Échelle" avant le menu déroulant
+                        RibbonLabel echelleLabel = new RibbonLabel
+                        {
+                            Text = "Échelle",
+                            ShowText = true
+                        };
+                        rowPanel.Items.Add(echelleLabel);
 
+                        // Créer le bouton déroulant avec "1/100" comme valeur par défaut
+                        RibbonSplitButton echelleDropdown = new RibbonSplitButton
+                        {
+                            Text = "1/100",  // Texte affiché sur le bouton
+                            ShowText = true,
+                            Size = RibbonItemSize.Standard
+                        };
 
-            ComponentManager.Ribbon.UpdateLayout();
+                        // Ajouter les différentes options d'échelle
+                        string[] scales = { "1/50", "1/100", "1/200", "1/500", "1/1000" };
+                        foreach (string scale in scales)
+                        {
+                            RibbonButton option = new RibbonButton
+                            {
+                                Text = scale,
+                                ShowText = true
+                            };
+                            echelleDropdown.Items.Add(option);
+                        }
+
+                        rowPanel.Items.Add(echelleDropdown);
+                    }
+                    else
+                    {
+                        RibbonButton sectionButton = new RibbonButton
+                        {
+                            Text = buttonText,
+                            ShowText = true,
+                            Size = RibbonItemSize.Large,
+                            Orientation = System.Windows.Controls.Orientation.Vertical,
+                            Image = !string.IsNullOrEmpty(imagePath) ? ImageManager.LoadAndResizeImage(imagePath, 16, 16) : null,
+                            LargeImage = !string.IsNullOrEmpty(imagePath) ? ImageManager.LoadAndResizeImage(imagePath, 32, 32) : null,
+                        };
+
+                        rowPanel.Items.Add(sectionButton);
+                    }
+                }
+
+                panelSource.Items.Add(rowPanel);
+                hiddenPanels.Add(panel);  // Stocker les panneaux pour les ajouter plus tard
+            }
 
         }
 
         private static void CreateInitialPanels(RibbonPanelSource projetPanelSource, RibbonPanel projetPanel)
         {
-            //// Initialize the hiddenPanels collection if it doesn't exist
-            //if (hiddenPanels == null)
-            //    hiddenPanels = new List<RibbonPanel>();
+            Dictionary<string, string[]> sections = new Dictionary<string, string[]>
+            {
+                { "Project", new string[] { "Nouveau", "Propriétés" } }
+            };
 
-            // Sections and buttons
-             Dictionary<string, string[]> sections = new Dictionary<string, string[]>
-             {
-              { 
-                "Project", new string[] { "Nouveau", "Propriétés" }
-               
-              }
-             };
             projetPanelSourceRef = projetPanelSource;
-            // Create buttons for each section
+
             foreach (var section in sections)
             {
                 foreach (var buttonText in section.Value)
@@ -433,75 +294,18 @@ namespace ClassLibrarysmartcop
                         IsEnabled = buttonText != "Propriétés"
                     };
 
+                    string imagePath = buttonText != "Propriétés"
+                        ? @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\nouveaux.png"
+                        : @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\propriete.png";
 
-                    // Set the button's images using the ImageManager helper class
-                    string imagePath = buttonText != "Propriétés" ? @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\nouveaux.png" : @"C:\Users\hp\source\repos\ClassLibrarysmartcop\ClassLibrarysmartcop\img\propriete.png";
                     nouveauButton.Image = ImageManager.LoadAndResizeImage(imagePath, 32, 32);
                     nouveauButton.LargeImage = ImageManager.LoadAndResizeImage(imagePath, 32, 32);
 
-                    // Add the button to the panel
                     projetPanelSource.Items.Add(nouveauButton);
                 }
+
+               SmartCopTab.Panels.Add(projetPanel);
             }
-
-            SmartCopTab.Panels.Add(projetPanel);
         }
-
-
-        //private static void CreateHiddenPanels()
-        //{
-        //    // Initialize the hiddenPanels collection if it doesn't exist
-        //    //if (hiddenPanels == null)
-        //    //    hiddenPanels = new List<RibbonPanel>();
-
-        //    // Sections and buttons
-        //    Dictionary<string, string[]> sections = new Dictionary<string, string[]>
-        //      {
-
-        //        { "Niveau/Parties", new string[] { "Fichiers DWG", "Niveaux", "Privatives/Communes" } },
-        //        { "Dessin", new string[] { "Habillage", "Tableau des contenances", "Calques" } },
-        //        { "Livrables", new string[] { "Ajustement", "Générer" } },
-        //        { "SmartCop", new string[] { "Préférences", "À Propos" } }
-        //      };
-        //    //EnableProprietesButton(projetPanelSourceRef);
-        //    // Clear existing panels if necessary
-        //    //hiddenPanels.Clear();
-
-        //    foreach (var section in sections)
-        //    {
-        //        RibbonPanelSource panelSource = new RibbonPanelSource
-        //        {
-        //            Title = section.Key
-        //        };
-
-        //        RibbonPanel panel = new RibbonPanel
-        //        {
-        //            Source = panelSource
-        //        };
-
-        //        RibbonRowPanel rowPanel = new RibbonRowPanel();
-
-        //        foreach (var buttonText in section.Value)
-        //        {
-        //            RibbonButton sectionButton = new RibbonButton
-        //            {
-        //                Text = buttonText,
-        //                ShowText = true,
-        //                Size = RibbonItemSize.Large
-        //            };
-
-        //            // Add event handlers if needed
-        //            // sectionButton.Click += SectionButton_Click;
-
-        //            rowPanel.Items.Add(sectionButton);
-        //        }
-
-        //        panelSource.Items.Add(rowPanel);
-        //        hiddenPanels.Add(panel);
-        //    }
-        //}
-
-
-        
     }
 }

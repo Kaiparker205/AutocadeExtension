@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ajoutercote));
-            this.txthauteur = new System.Windows.Forms.TextBox();
-            this.lblhauteur = new System.Windows.Forms.Label();
             this.txta = new System.Windows.Forms.TextBox();
             this.txtde = new System.Windows.Forms.TextBox();
             this.lbla = new System.Windows.Forms.Label();
@@ -42,23 +40,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txthauteur
-            // 
-            this.txthauteur.Location = new System.Drawing.Point(92, 83);
-            this.txthauteur.Name = "txthauteur";
-            this.txthauteur.Size = new System.Drawing.Size(149, 20);
-            this.txthauteur.TabIndex = 47;
-            // 
-            // lblhauteur
-            // 
-            this.lblhauteur.AutoSize = true;
-            this.lblhauteur.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.lblhauteur.Location = new System.Drawing.Point(12, 81);
-            this.lblhauteur.Name = "lblhauteur";
-            this.lblhauteur.Size = new System.Drawing.Size(54, 17);
-            this.lblhauteur.TabIndex = 46;
-            this.lblhauteur.Text = "Hauteur";
             // 
             // txta
             // 
@@ -102,7 +83,7 @@
             this.pictureBox6.ErrorImage = null;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(165, 118);
+            this.pictureBox6.Location = new System.Drawing.Point(151, 99);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(18, 36);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -117,7 +98,7 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 118);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 99);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,7 +111,7 @@
             this.annuler.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.annuler.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
             this.annuler.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.annuler.Location = new System.Drawing.Point(155, 118);
+            this.annuler.Location = new System.Drawing.Point(141, 99);
             this.annuler.Name = "annuler";
             this.annuler.Size = new System.Drawing.Size(86, 36);
             this.annuler.TabIndex = 49;
@@ -144,7 +125,7 @@
             this.button7.BackColor = System.Drawing.Color.White;
             this.button7.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button7.Font = new System.Drawing.Font("Microsoft YaHei", 9F);
-            this.button7.Location = new System.Drawing.Point(29, 118);
+            this.button7.Location = new System.Drawing.Point(15, 99);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(105, 36);
             this.button7.TabIndex = 48;
@@ -161,8 +142,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.annuler);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.txthauteur);
-            this.Controls.Add(this.lblhauteur);
             this.Controls.Add(this.txta);
             this.Controls.Add(this.txtde);
             this.Controls.Add(this.lbla);
@@ -177,9 +156,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txthauteur;
-        private System.Windows.Forms.Label lblhauteur;
         private System.Windows.Forms.TextBox txta;
         private System.Windows.Forms.TextBox txtde;
         private System.Windows.Forms.Label lbla;

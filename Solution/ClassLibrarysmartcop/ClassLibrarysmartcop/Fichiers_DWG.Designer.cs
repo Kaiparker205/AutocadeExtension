@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fichiers_DWG));
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -46,6 +47,13 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.annuler = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.autocadDataSet6 = new ClassLibrarysmartcop.AutocadDataSet6();
+            this.dWGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dWGTableAdapter = new ClassLibrarysmartcop.AutocadDataSet6TableAdapters.DWGTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fichierDWGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,6 +63,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dWGBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox6
@@ -198,8 +208,15 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.fichierDWGDataGridViewTextBoxColumn,
+            this.typeDataGridViewTextBoxColumn,
+            this.numeroDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.dWGBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(21, 51);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(566, 314);
@@ -298,6 +315,45 @@
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.UseVisualStyleBackColor = false;
             // 
+            // autocadDataSet6
+            // 
+            this.autocadDataSet6.DataSetName = "AutocadDataSet6";
+            this.autocadDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dWGBindingSource
+            // 
+            this.dWGBindingSource.DataMember = "DWG";
+            this.dWGBindingSource.DataSource = this.autocadDataSet6;
+            // 
+            // dWGTableAdapter
+            // 
+            this.dWGTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fichierDWGDataGridViewTextBoxColumn
+            // 
+            this.fichierDWGDataGridViewTextBoxColumn.DataPropertyName = "FichierDWG";
+            this.fichierDWGDataGridViewTextBoxColumn.HeaderText = "FichierDWG";
+            this.fichierDWGDataGridViewTextBoxColumn.Name = "fichierDWGDataGridViewTextBoxColumn";
+            // 
+            // typeDataGridViewTextBoxColumn
+            // 
+            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
+            this.typeDataGridViewTextBoxColumn.HeaderText = "Type";
+            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            // 
+            // numeroDataGridViewTextBoxColumn
+            // 
+            this.numeroDataGridViewTextBoxColumn.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
+            // 
             // Fichiers_DWG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -322,6 +378,7 @@
             this.Controls.Add(this.button7);
             this.Name = "Fichiers_DWG";
             this.Text = "Fichiers_DWG";
+            this.Load += new System.EventHandler(this.Fichiers_DWG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -331,6 +388,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dWGBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,7 +405,6 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button4;
         protected System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
@@ -354,5 +412,13 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button annuler;
         private System.Windows.Forms.Button button7;
+        private AutocadDataSet6 autocadDataSet6;
+        private System.Windows.Forms.BindingSource dWGBindingSource;
+        private AutocadDataSet6TableAdapters.DWGTableAdapter dWGTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fichierDWGDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
+        public System.Windows.Forms.DataGridView dataGridView2;
     }
 }

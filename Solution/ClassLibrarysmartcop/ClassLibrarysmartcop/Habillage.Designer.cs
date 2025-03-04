@@ -28,8 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Habillage));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.habillageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.feuilleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.habillageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.autocadDataSet7 = new ClassLibrarysmartcop.AutocadDataSet7();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,7 +50,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.habillageTableAdapter = new ClassLibrarysmartcop.AutocadDataSet7TableAdapters.HabillageTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.habillageBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -55,12 +63,39 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.habillageDataGridViewTextBoxColumn,
+            this.feuilleDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.habillageBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(24, 202);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(493, 220);
             this.dataGridView1.TabIndex = 97;
+            // 
+            // habillageDataGridViewTextBoxColumn
+            // 
+            this.habillageDataGridViewTextBoxColumn.DataPropertyName = "Habillage";
+            this.habillageDataGridViewTextBoxColumn.HeaderText = "Habillage";
+            this.habillageDataGridViewTextBoxColumn.Name = "habillageDataGridViewTextBoxColumn";
+            // 
+            // feuilleDataGridViewTextBoxColumn
+            // 
+            this.feuilleDataGridViewTextBoxColumn.DataPropertyName = "Feuille";
+            this.feuilleDataGridViewTextBoxColumn.HeaderText = "Feuille";
+            this.feuilleDataGridViewTextBoxColumn.Name = "feuilleDataGridViewTextBoxColumn";
+            // 
+            // habillageBindingSource
+            // 
+            this.habillageBindingSource.DataMember = "Habillage";
+            this.habillageBindingSource.DataSource = this.autocadDataSet7;
+            // 
+            // autocadDataSet7
+            // 
+            this.autocadDataSet7.DataSetName = "AutocadDataSet7";
+            this.autocadDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // checkBox1
             // 
@@ -84,7 +119,7 @@
             this.pictureBox4.InitialImage = null;
             this.pictureBox4.Location = new System.Drawing.Point(24, 144);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 36);
+            this.pictureBox4.Size = new System.Drawing.Size(30, 36);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 95;
             this.pictureBox4.TabStop = false;
@@ -258,6 +293,10 @@
             this.label1.TabIndex = 82;
             this.label1.Text = "coordonnées de référence :";
             // 
+            // habillageTableAdapter
+            // 
+            this.habillageTableAdapter.ClearBeforeFill = true;
+            // 
             // Habillage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,7 +320,10 @@
             this.Controls.Add(this.label1);
             this.Name = "Habillage";
             this.Text = "Habillage";
+            this.Load += new System.EventHandler(this.Habillage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.habillageBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -293,8 +335,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button1;
@@ -310,5 +350,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private AutocadDataSet7 autocadDataSet7;
+        private System.Windows.Forms.BindingSource habillageBindingSource;
+        private AutocadDataSet7TableAdapters.HabillageTableAdapter habillageTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn habillageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn feuilleDataGridViewTextBoxColumn;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

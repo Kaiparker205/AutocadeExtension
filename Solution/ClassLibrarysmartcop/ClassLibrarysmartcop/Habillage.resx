@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="habillageBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>160, 17</value>
+  </metadata>
+  <metadata name="autocadDataSet7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAB3XSURBVHhe7d1d
+        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAB3XSURBVHhe7d1d
         rGVnfd/xGb80hkBMSOrI0NDQhIu0VZMqLm9JIIDiQlBDIjXtRRuJxvVFpUq9q9SqUtuL5q4RUNGI2jJg
         G0hpA4hJQAqG4uCxYcAxzQsekwtLUVOcKAWPh/EQn3NmdZ3xfuyZfdY5Z7/99/o/6/l8pJ8sYs8ZKfbR
         978fD8MJANik7sSJk92v3HxL989f9h+621/2uf6Pj/Z7st/T3W0ve7z/4+n+j+/tbrv5rd07f+iG2Q8D
@@ -255,7 +261,7 @@
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACWeSURBVHhe7d15
+        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACWeSURBVHhe7d15
         sLRpXd5xFgEHHBBkV0E0IAlR4oKIIqugIBBFQFwKBBEMoKBRWSwVF1yDihIjCohLXHCJSsVCRWWLC0qV
         C8goyCJR2TdBtgFz3aVvZTL53b7ze+ecu5/u/nyqvn9RQ3W/ffo51+l++unLAJtzrXTzdLf0gPTI9E3p
         CenJ/9JPpWdspJ9JZ27X96dvSV+TvizdI31yul66bAKAo3XddMf0sPTdafwyf256WXpX+qcD7T3pVekF
@@ -422,7 +428,7 @@
   <data name="pictureBox10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAM
-        EQAADBEBv4x3mgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABaJSURBVHhe7d1Z
+        DwAADA8BUhErrgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABaJSURBVHhe7d1Z
         jJ13fcbxMVm4KelFWAOqWK4QUlWIBCVAMCUqjM+8ZzGaO1YpjSCQsEglDgLJooRG0LBcgJRKERCWi5F8
         zplY8gUVpIWA4KZUUNoEU5GGQikQAgJKpGC7/zf5V5jjl8SOZ/yc5fORvk3wjD0zbxX9npnE4zVgcYzG
         oyc2k+GwGY8O9CbDT2xMhl8p/UfpR6Vflk7scu3baN9W+za/0r4P7fvSvk/rW5tPqO8mAHA2Dh48+Jhy
@@ -525,7 +531,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAM
-        EQAADBEBv4x3mgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABaJSURBVHhe7d1Z
+        DwAADA8BUhErrgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABaJSURBVHhe7d1Z
         jJ13fcbxMVm4KelFWAOqWK4QUlWIBCVAMCUqjM+8ZzGaO1YpjSCQsEglDgLJooRG0LBcgJRKERCWi5F8
         zplY8gUVpIWA4KZUUNoEU5GGQikQAgJKpGC7/zf5V5jjl8SOZ/yc5fORvk3wjD0zbxX9npnE4zVgcYzG
         oyc2k+GwGY8O9CbDT2xMhl8p/UfpR6Vflk7scu3baN9W+za/0r4P7fvSvk/rW5tPqO8mAHA2Dh48+Jhy
@@ -628,7 +634,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
-        WgAAD1oB+jC/PwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADUJSURBVHhe7d0L
+        WAAAD1gBhc58tgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADUJSURBVHhe7d0L
         rG1Vfe/xA/I6iAIiYEB5iZEaa/ARQDSoGJSgVuylVquNtVe8t9p4i4lUAhbTamhvKam1mFSvVm2Ltipo
         bQU1FquWqsH0aosPrtoqamoUH/ioCOj9/Q7z4GDyO+fsx1prjjHm9598EvjvffYec/7/c86115pzjC0/
         /elPAQDAzMQkAADoW0wCAIC+xSQAAOhbTAIAgL7FJAAA6FtMAgCAvsUkAADoW0wCAIC+xSQAAOhbTAIA
@@ -858,4 +864,7 @@
         AAD07Kdb/j+tajxo//xcewAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="habillageTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>339, 17</value>
+  </metadata>
 </root>

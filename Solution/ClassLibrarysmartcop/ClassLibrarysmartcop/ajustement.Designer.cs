@@ -76,10 +76,31 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.partieNDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.consistanceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.situationDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.superficieInterieurTitreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.superficieAvecSurplombDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quotePartAjusteeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tantiemeIndivisionCalculeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tantiemeIndivisionAjusteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tantiemesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.autocadDataSet5 = new ClassLibrarysmartcop.AutocadDataSet5();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.partieNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.consistanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.situationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contenanceNumériséeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contenanceNumériséeajustéDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contenanceAdoptéeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calculBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.autocadDataSet4 = new ClassLibrarysmartcop.AutocadDataSet4();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.bindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.calculTableAdapter = new ClassLibrarysmartcop.AutocadDataSet4TableAdapters.calculTableAdapter();
+            this.tantiemesTableAdapter = new ClassLibrarysmartcop.AutocadDataSet5TableAdapters.TantiemesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.calculBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.calculBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tantiemesBindingSource)).BeginInit();
@@ -94,10 +115,14 @@
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tantiemesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet5)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calculBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // calculBindingSource1
@@ -519,15 +544,86 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.DataSource = this.bindingSource4;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.partieNDataGridViewTextBoxColumn1,
+            this.consistanceDataGridViewTextBoxColumn1,
+            this.situationDataGridViewTextBoxColumn1,
+            this.superficieInterieurTitreDataGridViewTextBoxColumn,
+            this.superficieAvecSurplombDataGridViewTextBoxColumn,
+            this.quotePartAjusteeDataGridViewTextBoxColumn,
+            this.tantiemeIndivisionCalculeDataGridViewTextBoxColumn,
+            this.tantiemeIndivisionAjusteDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tantiemesBindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(3, 6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(867, 236);
             this.dataGridView1.TabIndex = 0;
             // 
-            // bindingSource4
+            // idDataGridViewTextBoxColumn
             // 
-            this.bindingSource4.DataMember = "Tantiemes";
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // partieNDataGridViewTextBoxColumn1
+            // 
+            this.partieNDataGridViewTextBoxColumn1.DataPropertyName = "PartieN";
+            this.partieNDataGridViewTextBoxColumn1.HeaderText = "PartieN";
+            this.partieNDataGridViewTextBoxColumn1.Name = "partieNDataGridViewTextBoxColumn1";
+            // 
+            // consistanceDataGridViewTextBoxColumn1
+            // 
+            this.consistanceDataGridViewTextBoxColumn1.DataPropertyName = "Consistance";
+            this.consistanceDataGridViewTextBoxColumn1.HeaderText = "Consistance";
+            this.consistanceDataGridViewTextBoxColumn1.Name = "consistanceDataGridViewTextBoxColumn1";
+            // 
+            // situationDataGridViewTextBoxColumn1
+            // 
+            this.situationDataGridViewTextBoxColumn1.DataPropertyName = "Situation";
+            this.situationDataGridViewTextBoxColumn1.HeaderText = "Situation";
+            this.situationDataGridViewTextBoxColumn1.Name = "situationDataGridViewTextBoxColumn1";
+            // 
+            // superficieInterieurTitreDataGridViewTextBoxColumn
+            // 
+            this.superficieInterieurTitreDataGridViewTextBoxColumn.DataPropertyName = "SuperficieInterieurTitre";
+            this.superficieInterieurTitreDataGridViewTextBoxColumn.HeaderText = "SuperficieInterieurTitre";
+            this.superficieInterieurTitreDataGridViewTextBoxColumn.Name = "superficieInterieurTitreDataGridViewTextBoxColumn";
+            // 
+            // superficieAvecSurplombDataGridViewTextBoxColumn
+            // 
+            this.superficieAvecSurplombDataGridViewTextBoxColumn.DataPropertyName = "SuperficieAvecSurplomb";
+            this.superficieAvecSurplombDataGridViewTextBoxColumn.HeaderText = "SuperficieAvecSurplomb";
+            this.superficieAvecSurplombDataGridViewTextBoxColumn.Name = "superficieAvecSurplombDataGridViewTextBoxColumn";
+            // 
+            // quotePartAjusteeDataGridViewTextBoxColumn
+            // 
+            this.quotePartAjusteeDataGridViewTextBoxColumn.DataPropertyName = "QuotePartAjustee";
+            this.quotePartAjusteeDataGridViewTextBoxColumn.HeaderText = "QuotePartAjustee";
+            this.quotePartAjusteeDataGridViewTextBoxColumn.Name = "quotePartAjusteeDataGridViewTextBoxColumn";
+            // 
+            // tantiemeIndivisionCalculeDataGridViewTextBoxColumn
+            // 
+            this.tantiemeIndivisionCalculeDataGridViewTextBoxColumn.DataPropertyName = "TantiemeIndivisionCalcule";
+            this.tantiemeIndivisionCalculeDataGridViewTextBoxColumn.HeaderText = "TantiemeIndivisionCalcule";
+            this.tantiemeIndivisionCalculeDataGridViewTextBoxColumn.Name = "tantiemeIndivisionCalculeDataGridViewTextBoxColumn";
+            // 
+            // tantiemeIndivisionAjusteDataGridViewTextBoxColumn
+            // 
+            this.tantiemeIndivisionAjusteDataGridViewTextBoxColumn.DataPropertyName = "TantiemeIndivisionAjuste";
+            this.tantiemeIndivisionAjusteDataGridViewTextBoxColumn.HeaderText = "TantiemeIndivisionAjuste";
+            this.tantiemeIndivisionAjusteDataGridViewTextBoxColumn.Name = "tantiemeIndivisionAjusteDataGridViewTextBoxColumn";
+            // 
+            // tantiemesBindingSource2
+            // 
+            this.tantiemesBindingSource2.DataMember = "Tantiemes";
+            this.tantiemesBindingSource2.DataSource = this.autocadDataSet5;
+            // 
+            // autocadDataSet5
+            // 
+            this.autocadDataSet5.DataSetName = "AutocadDataSet5";
+            this.autocadDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage2
             // 
@@ -554,12 +650,65 @@
             this.dataGridView.AutoGenerateColumns = false;
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.DataSource = this.bindingSource1;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.partieNDataGridViewTextBoxColumn,
+            this.consistanceDataGridViewTextBoxColumn,
+            this.situationDataGridViewTextBoxColumn,
+            this.contenanceNumériséeDataGridViewTextBoxColumn,
+            this.contenanceNumériséeajustéDataGridViewTextBoxColumn,
+            this.contenanceAdoptéeDataGridViewTextBoxColumn});
+            this.dataGridView.DataSource = this.calculBindingSource2;
             this.dataGridView.Location = new System.Drawing.Point(6, 56);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ShowCellErrors = false;
             this.dataGridView.Size = new System.Drawing.Size(801, 150);
             this.dataGridView.TabIndex = 1;
+            // 
+            // partieNDataGridViewTextBoxColumn
+            // 
+            this.partieNDataGridViewTextBoxColumn.DataPropertyName = "Partie N";
+            this.partieNDataGridViewTextBoxColumn.HeaderText = "Partie N";
+            this.partieNDataGridViewTextBoxColumn.Name = "partieNDataGridViewTextBoxColumn";
+            // 
+            // consistanceDataGridViewTextBoxColumn
+            // 
+            this.consistanceDataGridViewTextBoxColumn.DataPropertyName = "Consistance";
+            this.consistanceDataGridViewTextBoxColumn.HeaderText = "Consistance";
+            this.consistanceDataGridViewTextBoxColumn.Name = "consistanceDataGridViewTextBoxColumn";
+            // 
+            // situationDataGridViewTextBoxColumn
+            // 
+            this.situationDataGridViewTextBoxColumn.DataPropertyName = "Situation";
+            this.situationDataGridViewTextBoxColumn.HeaderText = "Situation";
+            this.situationDataGridViewTextBoxColumn.Name = "situationDataGridViewTextBoxColumn";
+            // 
+            // contenanceNumériséeDataGridViewTextBoxColumn
+            // 
+            this.contenanceNumériséeDataGridViewTextBoxColumn.DataPropertyName = "Contenance numérisée";
+            this.contenanceNumériséeDataGridViewTextBoxColumn.HeaderText = "Contenance numérisée";
+            this.contenanceNumériséeDataGridViewTextBoxColumn.Name = "contenanceNumériséeDataGridViewTextBoxColumn";
+            // 
+            // contenanceNumériséeajustéDataGridViewTextBoxColumn
+            // 
+            this.contenanceNumériséeajustéDataGridViewTextBoxColumn.DataPropertyName = "Contenance numérisée (ajusté)";
+            this.contenanceNumériséeajustéDataGridViewTextBoxColumn.HeaderText = "Contenance numérisée (ajusté)";
+            this.contenanceNumériséeajustéDataGridViewTextBoxColumn.Name = "contenanceNumériséeajustéDataGridViewTextBoxColumn";
+            // 
+            // contenanceAdoptéeDataGridViewTextBoxColumn
+            // 
+            this.contenanceAdoptéeDataGridViewTextBoxColumn.DataPropertyName = "Contenance adoptée";
+            this.contenanceAdoptéeDataGridViewTextBoxColumn.HeaderText = "Contenance adoptée";
+            this.contenanceAdoptéeDataGridViewTextBoxColumn.Name = "contenanceAdoptéeDataGridViewTextBoxColumn";
+            // 
+            // calculBindingSource2
+            // 
+            this.calculBindingSource2.DataMember = "calcul";
+            this.calculBindingSource2.DataSource = this.autocadDataSet4;
+            // 
+            // autocadDataSet4
+            // 
+            this.autocadDataSet4.DataSetName = "AutocadDataSet4";
+            this.autocadDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pictureBox2
             // 
@@ -576,6 +725,18 @@
             this.pictureBox2.TabIndex = 38;
             this.pictureBox2.TabStop = false;
             // 
+            // bindingSource4
+            // 
+            this.bindingSource4.DataMember = "Tantiemes";
+            // 
+            // calculTableAdapter
+            // 
+            this.calculTableAdapter.ClearBeforeFill = true;
+            // 
+            // tantiemesTableAdapter
+            // 
+            this.tantiemesTableAdapter.ClearBeforeFill = true;
+            // 
             // ajustement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -589,6 +750,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "ajustement";
             this.Text = "ajustement";
+            this.Load += new System.EventHandler(this.ajustement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.calculBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.calculBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tantiemesBindingSource)).EndInit();
@@ -604,11 +766,15 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tantiemesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet5)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calculBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autocadDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -660,10 +826,31 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource bindingSource4;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private AutocadDataSet4 autocadDataSet4;
+        private System.Windows.Forms.BindingSource calculBindingSource2;
+        private AutocadDataSet4TableAdapters.calculTableAdapter calculTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partieNDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn consistanceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn situationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contenanceNumériséeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contenanceNumériséeajustéDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contenanceAdoptéeDataGridViewTextBoxColumn;
+        public System.Windows.Forms.DataGridView dataGridView;
+        private AutocadDataSet5 autocadDataSet5;
+        private System.Windows.Forms.BindingSource tantiemesBindingSource2;
+        private AutocadDataSet5TableAdapters.TantiemesTableAdapter tantiemesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partieNDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn consistanceDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn situationDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn superficieInterieurTitreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn superficieAvecSurplombDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quotePartAjusteeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tantiemeIndivisionCalculeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tantiemeIndivisionAjusteDataGridViewTextBoxColumn;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

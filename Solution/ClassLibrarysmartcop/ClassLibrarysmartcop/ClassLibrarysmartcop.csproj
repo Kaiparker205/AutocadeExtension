@@ -73,6 +73,12 @@
     <Compile Include="ajouterniveau.Designer.cs">
       <DependentUpon>ajouterniveau.cs</DependentUpon>
     </Compile>
+    <Compile Include="ajouterproprietaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouterproprietaires.Designer.cs">
+      <DependentUpon>ajouterproprietaires.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ajouter_partie_privative.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,8 +91,92 @@
     <Compile Include="ajustement.Designer.cs">
       <DependentUpon>ajustement.cs</DependentUpon>
     </Compile>
+    <Compile Include="AutocadDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet141.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet141.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutocadDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutocadDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dessin.cs" />
+    <Compile Include="Helpers\RibbonPanelHelper.cs" />
     <Compile Include="ImageManager.cs" />
+    <Compile Include="livrables.cs" />
+    <Compile Include="niveau.cs" />
     <Compile Include="OpenSelectionFormHandler .cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="RibbonCreator.cs" />
     <Compile Include="cliques.cs">
       <SubType>Form</SubType>
@@ -155,6 +245,7 @@
     <Compile Include="Préférences.Designer.cs">
       <DependentUpon>Préférences.cs</DependentUpon>
     </Compile>
+    <Compile Include="SmartCop.cs" />
     <Compile Include="tableau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ajouterniveau.resx">
       <DependentUpon>ajouterniveau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouterproprietaires.resx">
+      <DependentUpon>ajouterproprietaires.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ajouter_partie_privative.resx">
       <DependentUpon>Ajouter_partie_privative.cs</DependentUpon>
@@ -213,14 +307,183 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="AutocadDataSet.xsc">
+      <DependentUpon>AutocadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet.xss">
+      <DependentUpon>AutocadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet1.xsc">
+      <DependentUpon>AutocadDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet1.xss">
+      <DependentUpon>AutocadDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet10.xsc">
+      <DependentUpon>AutocadDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet10.xss">
+      <DependentUpon>AutocadDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet11.xsc">
+      <DependentUpon>AutocadDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet11.xss">
+      <DependentUpon>AutocadDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet12.xsc">
+      <DependentUpon>AutocadDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet12.xss">
+      <DependentUpon>AutocadDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet13.xsc">
+      <DependentUpon>AutocadDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet13.xss">
+      <DependentUpon>AutocadDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet141.xsc">
+      <DependentUpon>AutocadDataSet141.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet141.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet141.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet141.xss">
+      <DependentUpon>AutocadDataSet141.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet2.xsc">
+      <DependentUpon>AutocadDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet2.xss">
+      <DependentUpon>AutocadDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet3.xsc">
+      <DependentUpon>AutocadDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet3.xss">
+      <DependentUpon>AutocadDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet4.xsc">
+      <DependentUpon>AutocadDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet4.xss">
+      <DependentUpon>AutocadDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet5.xsc">
+      <DependentUpon>AutocadDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet5.xss">
+      <DependentUpon>AutocadDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet6.xsc">
+      <DependentUpon>AutocadDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet6.xss">
+      <DependentUpon>AutocadDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet7.xsc">
+      <DependentUpon>AutocadDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet7.xss">
+      <DependentUpon>AutocadDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet8.xsc">
+      <DependentUpon>AutocadDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet8.xss">
+      <DependentUpon>AutocadDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet9.xsc">
+      <DependentUpon>AutocadDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="AutocadDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutocadDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutocadDataSet9.xss">
+      <DependentUpon>AutocadDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\!.png" />
     <Content Include="img\a-propos-de.png" />
     <Content Include="img\actualiser.png" />
     <Content Include="img\ajustement.png" />
-    <Content Include="img\Calques.png" />
     <Content Include="img\file.png" />
     <Content Include="img\generer.png" />
     <Content Include="img\niveaux.png" />

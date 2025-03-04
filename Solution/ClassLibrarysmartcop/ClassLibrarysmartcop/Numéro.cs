@@ -21,5 +21,11 @@ namespace ClassLibrarysmartcop
         {
             this.Close();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Ajouter_partie_privative ajouter_Partie_Privative = new Ajouter_partie_privative();
+            ajouter_Partie_Privative.Show();
+        }
     }
 }
