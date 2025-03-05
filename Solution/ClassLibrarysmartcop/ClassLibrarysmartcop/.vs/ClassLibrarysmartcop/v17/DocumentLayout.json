@@ -1,0 +1,479 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\fichiers_dwg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\fichiers_dwg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\fichiers_dwg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\fichiers_dwg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\dupliquer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\dupliquer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ajustement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajustement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ajouterproprietaires.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajouterproprietaires.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ajouterniveau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajouterniveau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ajoutercote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajoutercote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ajouter_partie_privative.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajouter_partie_privative.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ajoutercote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajoutercote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ajouterproprietaires.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajouterproprietaires.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ajustement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajustement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\calques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\calques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\dupliquer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\dupliquer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ajouter_partie_privative.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajouter_partie_privative.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\ajouterniveau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\ajouterniveau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\classlibrarysmartcop\\privates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\privates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\niveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\niveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\nouveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\nouveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\pr\u00E9f\u00E9rences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\pr\u00E9f\u00E9rences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\propos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\propos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\tableau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\tableau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\tableau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\tableau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\proprietes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\proprietes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\proprietes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\proprietes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\niveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\niveaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\classlibrarysmartcop\\habillage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\habillage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\generate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\generate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|c:\\users\\hp\\source\\repos\\classlibrarysmartcop\\classlibrarysmartcop\\generate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CE95B9E-38A2-4B34-919F-9C37925572FF}|ClassLibrarysmartcop\\ClassLibrarysmartcop.csproj|solutionrelative:classlibrarysmartcop\\generate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "tableau.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\tableau.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\tableau.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\tableau.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\tableau.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwCEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:20:30.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "tableau.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\tableau.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\tableau.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\tableau.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\tableau.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:20:28.702Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Propos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Propos.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Propos.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Propos.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Propos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:20:17.991Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Pr\u00E9f\u00E9rences.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Pr\u00E9f\u00E9rences.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:19:21.725Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "nouveaux.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\nouveaux.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\nouveaux.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\nouveaux.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\nouveaux.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:19:17.654Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "niveaux.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\niveaux.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\niveaux.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\niveaux.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\niveaux.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAUwCsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:19:14.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "niveaux.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\niveaux.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\niveaux.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\niveaux.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\niveaux.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:19:13.108Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "generate.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\generate.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\generate.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\generate.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\generate.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwCEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:19:03.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "generate.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\generate.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\generate.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\generate.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\generate.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:19:01.847Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Fichiers_DWG.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Fichiers_DWG.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Fichiers_DWG.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Fichiers_DWG.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Fichiers_DWG.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAiwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:18:57.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fichiers_DWG.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Fichiers_DWG.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Fichiers_DWG.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Fichiers_DWG.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Fichiers_DWG.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:18:55.742Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dupliquer.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Dupliquer.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Dupliquer.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Dupliquer.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Dupliquer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAApwCEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:18:51.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dupliquer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Dupliquer.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Dupliquer.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Dupliquer.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Dupliquer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:18:50.342Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Calques.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Calques.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Calques.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Calques.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Calques.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:18:47.988Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ajustement.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajustement.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\ajustement.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajustement.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\ajustement.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADgvycAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:18:24.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ajustement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajustement.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\ajustement.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajustement.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\ajustement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:18:21.811Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ajouterproprietaires.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajouterproprietaires.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\ajouterproprietaires.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajouterproprietaires.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\ajouterproprietaires.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAApwDkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:18:16.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ajouterproprietaires.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajouterproprietaires.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\ajouterproprietaires.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajouterproprietaires.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\ajouterproprietaires.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:18:14.826Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ajoutercote.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajoutercote.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\ajoutercote.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajoutercote.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\ajoutercote.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAApwCEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:17:50.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ajoutercote.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajoutercote.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\ajoutercote.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajoutercote.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\ajoutercote.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:17:48.079Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Ajouter_partie_privative.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Ajouter_partie_privative.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Ajouter_partie_privative.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Ajouter_partie_privative.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Ajouter_partie_privative.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:17:45.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ajouterniveau.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajouterniveau.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\ajouterniveau.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajouterniveau.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\ajouterniveau.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAArwCoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:16:34.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ajouterniveau.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajouterniveau.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\ajouterniveau.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\ajouterniveau.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\ajouterniveau.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:16:32.243Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "proprietes.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\proprietes.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\proprietes.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\proprietes.cs",
+              "RelativeToolTip": "ClassLibrarysmartcop\\proprietes.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwDQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:15:27.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "proprietes.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\proprietes.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\proprietes.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\proprietes.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\proprietes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:15:25.859Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "privates.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\privates.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\privates.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\privates.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\privates.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T13:55:35.265Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Habillage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Habillage.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Habillage.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Habillage.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Habillage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T13:32:20.612Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ajouter_partie_privative.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Ajouter_partie_privative.cs",
+              "RelativeDocumentMoniker": "ClassLibrarysmartcop\\Ajouter_partie_privative.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ClassLibrarysmartcop\\ClassLibrarysmartcop\\Ajouter_partie_privative.cs [Design]",
+              "RelativeToolTip": "ClassLibrarysmartcop\\Ajouter_partie_privative.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T12:41:58.495Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+using System;
+using Autodesk.AutoCAD.Runtime;
+using Autodesk.AutoCAD.ApplicationServices;
+using Autodesk.AutoCAD.EditorInput;
+using Autodesk.Windows;
+using System.Windows.Input;
+using System.Collections.Generic;
+using System.Windows.Forms;
+
+// Using your UI project namespace
+using Autocad;
+
+[assembly: CommandClass(typeof(SmartSamiPlugin.RibbonCreator))]
+
+namespace SmartSamiPlugin
+{
+    public class RibbonCreator
+    {
+        private static List<RibbonPanel> hiddenPanels = new List<RibbonPanel>();
+        private static RibbonTab smartSamiTab;
+
+        [CommandMethod("SmartSami")]
+        public static void LoadSmartSamiRibbon()
+        {
+            Editor ed = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor;
+            ed.WriteMessage("\n[DEBUG] Running SmartSami Ribbon setup...");
+
+            // Get the AutoCAD Ribbon
+            RibbonControl ribbonControl = ComponentManager.Ribbon;
+            if (ribbonControl == null)
+            {
+                ed.WriteMessage("\n[ERROR] Unable to access the Ribbon Control.");
+                return;
+            }
+
+            // Check if the tab already exists
+            smartSamiTab = null;
+            foreach (RibbonTab existingTab in ribbonControl.Tabs)
+            {
+                if (existingTab.Title == "SmartSami")
+                {
+                    smartSamiTab = existingTab;
+                    break;
+                }
+            }
+
+            // Create the tab if it doesn't exist
+            if (smartSamiTab == null)
+            {
+                smartSamiTab = new RibbonTab
+                {
+                    Title = "SmartSami",
+                    Id = "SmartSami_TAB"
+                };
+                ribbonControl.Tabs.Add(smartSamiTab);
+                ed.WriteMessage("\n[DEBUG] SmartSami Ribbon has been added.");
+            }
+
+            // Create Projet Panel (Initial View)
+            RibbonPanelSource projetPanelSource = new RibbonPanelSource
+            {
+                Title = "Projet"
+            };
+            RibbonPanel projetPanel = new RibbonPanel
+            {
+                Source = projetPanelSource
+            };
+
+            // Create "Nouveau" Button
+            RibbonButton nouveauButton = new RibbonButton
+            {
+                Text = "Nouveau",
+                ShowText = true,
+                Size = RibbonItemSize.Large,
+                CommandHandler = new OpenSelectionFormHandler()
+            };
+
+            // Add "Nouveau" Button to Projet Panel
+            projetPanelSource.Items.Add(nouveauButton);
+            smartSamiTab.Panels.Add(projetPanel);
+
+            // Create Other Sections (Initially Hidden)
+            CreateHiddenPanels();
+
+            // Force ribbon UI refresh
+            ComponentManager.Ribbon.UpdateLayout();
+        }
+
+        private static void CreateHiddenPanels()
+        {
+            // Sections and buttons
+            Dictionary<string, string[]> sections = new Dictionary<string, string[]>
+            {
+                { "Propriétés", new string[] { "Propriétés" } },
+                { "Niveau/Parties", new string[] { "Fichiers DWG", "Niveaux", "Privatives/Communes" } },
+                { "Dessin", new string[] { "Habillage", "Tableau des contenances", "Calques" } },
+                { "Livrables", new string[] { "Ajustement", "Générer" } },
+                { "SmartCop", new string[] { "Préférences", "À Propos" } }
+            };
+
+            foreach (var section in sections)
+            {
+                RibbonPanelSource panelSource = new RibbonPanelSource
+                {
+                    Title = section.Key
+                };
+                RibbonPanel panel = new RibbonPanel
+                {
+                    Source = panelSource
+                };
+
+                // Add buttons to each section
+                foreach (var buttonText in section.Value)
+                {
+                    RibbonButton sectionButton = new RibbonButton
+                    {
+                        Text = buttonText,
+                        ShowText = true,
+                        Size = RibbonItemSize.Large
+                    };
+                    panelSource.Items.Add(sectionButton);
+                }
+
+                // Store these panels to reveal them later
+                hiddenPanels.Add(panel);
+            }
+        }
+
+        // Button Command to Show Selection Form
+        private class OpenSelectionFormHandler : ICommand
+        {
+            public event EventHandler CanExecuteChanged;
+            public bool CanExecute(object parameter) => true;
+
+            public void Execute(object parameter)
+            {
+                Editor ed = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor;
+                ed.WriteMessage("\n[DEBUG] Opening Selection Form...");
+
+                string selectedOption = ShowSelectionForm();
+
+                if (selectedOption != null)
+                {
+                    OpenUIForm(selectedOption);
+
+                    // Reveal additional sections
+                    if (smartSamiTab != null && hiddenPanels.Count > 0)
+                    {
+                        foreach (var panel in hiddenPanels)
+                        {
+                            smartSamiTab.Panels.Add(panel);
+                        }
+                        hiddenPanels.Clear();
+                    }
+
+                    ComponentManager.Ribbon.UpdateLayout();
+                }
+            }
+
+            private string ShowSelectionForm()
+            {
+                string selectedValue = null;
+                using (Form selectionForm = new Form())
+                {
+                    selectionForm.Text = "Choisissez un type de projet";
+                    selectionForm.Width = 400;
+                    selectionForm.Height = 250;
+                    selectionForm.StartPosition = FormStartPosition.CenterScreen;
+
+                    FlowLayoutPanel panel = new FlowLayoutPanel
+                    {
+                        Dock = DockStyle.Fill,
+                        FlowDirection = FlowDirection.TopDown,
+                        AutoSize = true
+                    };
+
+                    Button immeubleButton = new Button { Text = "Immeuble", Width = 300, Height = 50 };
+                    Button residenceButton = new Button { Text = "Résidence", Width = 300, Height = 50 };
+                    Button ensembleButton = new Button { Text = "Ensemble d'Immeubles", Width = 300, Height = 50 };
+
+                    immeubleButton.Click += (sender, e) => { selectedValue = "Immeuble"; selectionForm.Close(); };
+                    residenceButton.Click += (sender, e) => { selectedValue = "Résidence"; selectionForm.Close(); };
+                    ensembleButton.Click += (sender, e) => { selectedValue = "Ensemble d'Immeubles"; selectionForm.Close(); };
+
+                    panel.Controls.Add(immeubleButton);
+                    panel.Controls.Add(residenceButton);
+                    panel.Controls.Add(ensembleButton);
+                    selectionForm.Controls.Add(panel);
+
+                    selectionForm.ShowDialog();
+                }
+                return selectedValue;
+            }
+
+            private void OpenUIForm(string selectedOption)
+            {
+                if (selectedOption == "Immeuble")
+                {
+                    new ajoutercote().ShowDialog();
+                }
+                else if (selectedOption == "Résidence")
+                {
+                    new ajouterniveau().ShowDialog();
+                }
+                else if (selectedOption == "Ensemble d'Immeubles")
+                {
+                    new Ajouter_partie_privative().ShowDialog();
+                }
+            }
+        }
+    }
+}
